@@ -1,0 +1,13 @@
+D:\Yeamin\Flat-Management\FlatManage.Domain\bin\Debug\net10.0\FlatManage.Domain.deps.json
+D:\Yeamin\Flat-Management\FlatManage.Domain\bin\Debug\net10.0\FlatManage.Domain.dll
+D:\Yeamin\Flat-Management\FlatManage.Domain\bin\Debug\net10.0\FlatManage.Domain.pdb
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\FlatManage.Domain.csproj.AssemblyReference.cache
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\FlatManage.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\FlatManage.Domain.AssemblyInfoInputs.cache
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\FlatManage.Domain.AssemblyInfo.cs
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\FlatManage.Domain.csproj.CoreCompileInputs.cache
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\FlatManage.Domain.sourcelink.json
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\FlatManage.Domain.dll
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\refint\FlatManage.Domain.dll
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\FlatManage.Domain.pdb
+D:\Yeamin\Flat-Management\FlatManage.Domain\obj\Debug\net10.0\ref\FlatManage.Domain.dll

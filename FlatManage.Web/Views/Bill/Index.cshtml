@@ -1,0 +1,93 @@
+@{
+    ViewData["Title"] = "Rent & Billing";
+}
+
+<div class="card mb-4 border-0">
+    <div class="card-body py-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h4 class="fw-bold mb-1">Billing Management</h4>
+                <p class="text-muted mb-0">Generate monthly invoices and track payments.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <button class="btn btn-outline-primary me-2 rounded-pill px-4">
+                    <i class="fas fa-file-invoice me-1"></i> Generate Monthly
+                </button>
+                <button class="btn btn-primary rounded-pill px-4">
+                    <i class="fas fa-plus me-1"></i> New Payment
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card border-0">
+            <div class="card-header bg-white">
+                Recent Invoices
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-hover mb-0">
+                    <thead class="bg-light">
+                        <tr>
+                            <th class="ps-3">Invoice #</th>
+                            <th>Tenant</th>
+                            <th>Unit</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th class="text-end pe-3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ps-3 fw-bold">INV-202604-01</td>
+                            <td>James Wilson</td>
+                            <td>302</td>
+                            <td>৳ 25,000</td>
+                            <td><span class="badge bg-success">Paid</span></td>
+                            <td class="text-end pe-3">
+                                <button class="btn btn-sm btn-light border">Print</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ps-3 fw-bold">INV-202604-02</td>
+                            <td>Sarah Miller</td>
+                            <td>104</td>
+                            <td>৳ 18,500</td>
+                            <td><span class="badge bg-warning">Pending</span></td>
+                            <td class="text-end pe-3">
+                                <button class="btn btn-sm btn-primary">Pay Now</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0">
+            <div class="card-header bg-white">
+                Collection Summary
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                    <span>Expected Total:</span>
+                    <strong>৳ 4,50,000</strong>
+                </div>
+                <div class="d-flex justify-content-between mb-3 text-success">
+                    <span>Collected:</span>
+                    <strong>৳ 3,20,000</strong>
+                </div>
+                <div class="d-flex justify-content-between mb-3 text-danger">
+                    <span>Outstanding:</span>
+                    <strong>৳ 1,30,000</strong>
+                </div>
+                <hr>
+                <button class="btn btn-success w-100 rounded-pill mb-2">
+                    <i class="fas fa-paper-plane me-2"></i> Send SMS Reminders
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

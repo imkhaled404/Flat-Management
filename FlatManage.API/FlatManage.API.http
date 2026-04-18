@@ -1,0 +1,6 @@
+@FlatManage.API_HostAddress = http://localhost:5151
+
+GET {{FlatManage.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

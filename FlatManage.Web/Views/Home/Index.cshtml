@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "Executive Dashboard";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card border-0">
+            <div class="stat-card">
+                <div class="stat-icon bg-primary text-white">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div>
+                    <div class="stat-title">Total Buildings</div>
+                    <div class="stat-value">6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0">
+            <div class="stat-card">
+                <div class="stat-icon bg-success text-white">
+                    <i class="fas fa-key"></i>
+                </div>
+                <div>
+                    <div class="stat-title">Occupancy Rate</div>
+                    <div class="stat-value">84%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0">
+            <div class="stat-card">
+                <div class="stat-icon bg-warning text-white">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+                <div>
+                    <div class="stat-title">Pending Rent</div>
+                    <div class="stat-value">৳ 1.2M</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0">
+            <div class="stat-card">
+                <div class="stat-icon bg-danger text-white">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div>
+                    <div class="stat-title">Open Tickets</div>
+                    <div class="stat-value">12</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Revenue Overview</span>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-light border dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Last 6 Months
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <canvas id="revenueChart" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Recent Invoices
+            </div>
+            <div class="card-body p-0">
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item px-3 py-3 border-0 border-bottom">
+                        <div class="d-flex justify-content-between">
+                            <strong>James Wilson</strong>
+                            <span class="badge bg-success-subtle text-success">Paid</span>
+                        </div>
+                        <small class="text-muted">Unit 302 - ৳ 25,000</small>
+                    </div>
+                    <div class="list-group-item px-3 py-3 border-0 border-bottom">
+                        <div class="d-flex justify-content-between">
+                            <strong>Sarah Miller</strong>
+                            <span class="badge bg-warning-subtle text-warning">Pending</span>
+                        </div>
+                        <small class="text-muted">Unit 104 - ৳ 18,500</small>
+                    </div>
+                    <div class="list-group-item px-3 py-3 border-0 border-bottom">
+                        <div class="d-flex justify-content-between">
+                            <strong>Robert Fox</strong>
+                            <span class="badge bg-danger-subtle text-danger">Overdue</span>
+                        </div>
+                        <small class="text-muted">Unit 501 - ৳ 32,000</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-white border-0 text-center">
+                <a href="#" class="btn btn-sm btn-link text-decoration-none">View All Invoices</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const ctx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Rent Collection',
+                    data: [1200000, 1900000, 3000000, 5000000, 2000000, 3000000],
+                    borderColor: '#3498db',
+                    backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+}
